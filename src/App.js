@@ -3,6 +3,7 @@ import Nav from './Components/Nav';
 import Home from './Components/Home';
 import './App.css'
 import Detail from './Components/Detail';
+import Login from './Components/Login';
 import {
   BrowserRouter as Router,
   Routes,
@@ -18,8 +19,9 @@ function App() {
       <Router>
           <Nav/>
           <Routes>
-            <Route path="/detail" element={<Detail/>}/>
+            <Route path="/login" element={<Login/>}/>
             <Route path="/" element={<Home/>}/>
+            <Route path="/detail" element={<Detail/>}/>
           </Routes>
       </Router>
     </div>
